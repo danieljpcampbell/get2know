@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="63e00024678a175d8627aa4c" data-wf-site="63dfda22e4e25f95800a0a79" lang="en"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+<html data-wf-page="63e2ac3b43a2cd1c48665100" data-wf-site="63dfda22e4e25f95800a0a79" lang="en"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
   <meta charset="utf-8">
   
   
@@ -31,7 +31,7 @@ body .swiper-slide.is-photos {
             aspect-ratio: 16 / 9;
         }</style></head>
 <body class="body-2">
-  <div class="page-wrapper-2">
+  <div class="page-wrapper-3">
     <div class="global-styles-2">
       <div class="html w-embed">
         <style>
@@ -70,13 +70,13 @@ a {
     <main class="main-wrapper-2">
       <section class="section">
         <div class="container is-slider">
-          <div class="slider_wrap">
+          <div class="slider_wrap-2">
             <div class="slider_right">
-              {%- assign collection = collections.parents | sort: "-created-on" -%}<div class="swiper is-photos w-dyn-list">
+              {%- assign collection = collections.someone-new | sort: "-created-on" -%}<div class="swiper is-photos w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="swiper-wrapper is-photos w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="swiper-slide is-photos w-dyn-item">
                     <div class="slider_height">
-                      <div class="text-block-3">{{ item.data.f_question }}</div>
+                      <div class="text-block-5 text-block-3">{{ item.data.f_question }}</div>
                     </div>
                   </div>{%- endfor -%}
                 </div>{%- endunless -%}

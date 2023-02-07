@@ -85,6 +85,10 @@ a {
                 </div>{%- endif -%}
               </div>
             </div>
+            <div class="arrows">
+              <a href="{{ links.23 }}" class="arrow is-left w-inline-block"><img src="{{ images.-2da0e7ff.url }}" loading="lazy" alt="{{ images.-2da0e7ff.alt | trim | escape }}"></a>
+              <a href="{{ links.23 }}" class="arrow is-right w-inline-block"><img src="{{ images.-4935aff2.url }}" loading="lazy" alt="{{ images.-4935aff2.alt | trim | escape }}"></a>
+            </div>
           </div>
         </div>
       </section>
@@ -116,3 +120,5 @@ let photoSwiper = new Swiper(".swiper.is-photos", {
 });
 photoSwiper.controller.control = contentSwiper;
 </script>
+
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.1/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script></body></html>

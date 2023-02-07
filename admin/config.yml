@@ -79,6 +79,106 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: first_date
+    label: First Dates
+    folder: cms/first-date
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Question Number
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_question
+        label: Question
+        widget: text
+        required: false
+      - hint: ''
+        name: f_description
+        label: Description
+        widget: text
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: first-date
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[first-date].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: someone_new
+    label: Someone News
+    folder: cms/someone-new
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Question Number
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_question
+        label: Question
+        widget: text
+        required: false
+      - hint: ''
+        name: f_desciption
+        label: Desciption
+        widget: text
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: someone-new
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[someone-new].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
   - name: yourself
     label: Yourselves
     folder: cms/yourself
@@ -377,10 +477,6 @@ collections:
             label: Text
             name: 180a621c
             widget: string
-          - hint: 'Original text: Your Kids, key: -77eac9c6'
-            label: Text
-            name: '-77eac9c6'
-            widget: string
           - hint: 'Original text: Your Siblings, key: -52d600c2'
             label: Text
             name: '-52d600c2'
@@ -389,13 +485,17 @@ collections:
             label: Text
             name: 238f9ea8
             widget: string
-          - hint: 'Original text: Stangers, key: 5218ef0d'
-            label: Text
-            name: 5218ef0d
-            widget: string
           - hint: 'Original text: Yourself, key: -24c06de1'
             label: Text
             name: '-24c06de1'
+            widget: string
+          - hint: 'Original text: Your Date, key: -77ee1485'
+            label: Text
+            name: '-77ee1485'
+            widget: string
+          - hint: 'Original text: Someone New, key: 1fc132'
+            label: Text
+            name: 1fc132
             widget: string
           - hint: >-
               Original text: A collection of simple card decks with
@@ -412,10 +512,6 @@ collections:
             label: Text
             name: 3b13c496
             widget: string
-          - hint: 'Original text: Kids Deck, key: 7b77c27c'
-            label: Text
-            name: 7b77c27c
-            widget: string
           - hint: 'Original text: Siblings Deck, key: c756d78'
             label: Text
             name: c756d78
@@ -424,13 +520,17 @@ collections:
             label: Text
             name: 2c5b2094
             widget: string
-          - hint: 'Original text: Stangers Deck, key: 2b36d1fc'
-            label: Text
-            name: 2b36d1fc
-            widget: string
           - hint: 'Original text: Yourself Deck, key: -518ab5d6'
             label: Text
             name: '-518ab5d6'
+            widget: string
+          - hint: 'Original text: First Date Deck, key: 46fb404b'
+            label: Text
+            name: 46fb404b
+            widget: string
+          - hint: 'Original text: Someone New Deck, key: -16397109'
+            label: Text
+            name: '-16397109'
             widget: string
           - hint: 'Original text: Protected Page, key: -11d4bbff'
             label: Text
@@ -1617,6 +1717,10 @@ collections:
             label: Link
             name: ff58f2e
             widget: string
+          - hint: 'Original link: /first-date, key: 499f3e1a'
+            label: Link
+            name: 499f3e1a
+            widget: string
           - hint: 'Original link: /, key: 2f'
             label: Link
             name: 2f
@@ -1689,7 +1793,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: d33194a
+            name: i58e091c3
             widget: object
             fields:
               - name: url
@@ -1702,7 +1806,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: i2b0632ff
+            name: 40a597e7
             widget: object
             fields:
               - name: url
@@ -1729,6 +1833,19 @@ collections:
                 required: false
           - label: Image
             name: i26a20785
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7c307218
             widget: object
             fields:
               - name: url
