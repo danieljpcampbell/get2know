@@ -3177,7 +3177,7 @@ figcaption {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  display: none;
+  display: block;
 }
 
 .div-block-4 {
