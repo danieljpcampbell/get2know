@@ -1721,6 +1721,10 @@ collections:
             label: Link
             name: 499f3e1a
             widget: string
+          - hint: 'Original link: /someone-new, key: 659d6b6'
+            label: Link
+            name: 659d6b6
+            widget: string
           - hint: 'Original link: /, key: 2f'
             label: Link
             name: 2f
